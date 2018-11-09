@@ -1,0 +1,62 @@
+{
+  "name": "evangelist",
+  "description": "Library of helpers that are useful for functional programming",
+  "keywords": [
+    "override",
+    "overriding",
+    "wrap",
+    "wrapping",
+    "function",
+    "method"
+  ],
+  "version": "0.9.0",
+  "homepage": "https://github.com/eserozvataf/evangelist#readme",
+  "author": "Eser Ozvataf <eser@ozvataf.com>",
+  "contributors": [
+    {
+      "name": "Eser Ozvataf",
+      "email": "eser@ozvataf.com",
+      "url": "http://eser.ozvataf.com/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eserozvataf/evangelist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eserozvataf/evangelist/issues"
+  },
+  "license": "Apache-2.0",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "scripts": {
+    "compile": "tsc --build",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.mjs ./src/",
+    "test": "jest"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "bin": {},
+  "dependencies": {
+    "tslib": "^1.9.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.9",
+    "@types/node": "^10.12.2",
+    "eslint": "^5.8.0",
+    "eslint-config-eser": "^2.0.7",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.4",
+    "typescript": "^3.1.6",
+    "typescript-eslint-parser": "^20.1.1"
+  }
+}

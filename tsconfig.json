@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "importHelpers": true,
+        "sourceMap": true,
+        "declaration": true,
+        "downlevelIteration": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "strictNullChecks": true,
+        "strict": true,
+        "newLine": "LF",
+        "rootDir": "./src/",
+        "outDir": "./",
+        "lib": [
+            "es2015"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "~/*": [
+                "./src/*"
+            ]
+        }
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+    ]
+}

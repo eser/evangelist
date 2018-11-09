@@ -1,0 +1,15 @@
+# package directories
+node_modules/
+
+# OS X
+.DS_Store
+
+# Git
+.git*
+
+# configuration and dotfiles
+tsconfig.json
+jest.config.js
+.eslintrc
+makefile.js
+.npmignore
