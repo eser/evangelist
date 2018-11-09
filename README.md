@@ -1,8 +1,10 @@
-# [evangelist](https://github.com/eserozvataf/evangelist)
+# 🌟 [evangelist](https://github.com/eserozvataf/evangelist)
 
+[![build status][build-image]][build-url]
 [![npm version][npm-image]][npm-url]
 [![npm download][download-image]][npm-url]
 [![dependencies][dep-image]][dep-url]
+[![coverage status][coverage-image]][coverage-url]
 [![license][license-image]][license-url]
 
 
@@ -239,10 +241,14 @@ It is publicly open for any contribution. Bugfixes, new features and extra modul
 [Visit my patreon profile at patreon.com/eserozvataf](https://www.patreon.com/eserozvataf)
 
 
+[build-image]: https://travis-ci.org/eserozvataf/evangelist.svg?branch=master
+[build-url]: https://travis-ci.org/eserozvataf/evangelist
 [npm-image]: https://img.shields.io/npm/v/evangelist.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/evangelist
 [download-image]: https://img.shields.io/npm/dt/evangelist.svg?style=flat-square
 [dep-image]: https://img.shields.io/david/eserozvataf/evangelist.svg?style=flat-square
 [dep-url]: https://github.com/eserozvataf/evangelist
+[coverage-image]: https://coveralls.io/repos/eserozvataf/evangelist/badge.svg?branch=master
+[coverage-url]: https://coveralls.io/r/eserozvataf/evangelist?branch=master
 [license-image]: https://img.shields.io/npm/l/evangelist.svg?style=flat-square
 [license-url]: https://github.com/eserozvataf/evangelist/blob/master/LICENSE

@@ -7,6 +7,9 @@ node_modules/
 # Git
 .git*
 
+# temp directory
+tmp/
+
 # configuration and dotfiles
 tsconfig.json
 jest.config.js
