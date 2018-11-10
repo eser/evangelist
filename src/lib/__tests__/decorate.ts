@@ -1,12 +1,14 @@
 import decorate from '../decorate';
 
-test('decorate', () => {
-    let generator = () => 5;
+describe('decorate', () => {
+    test('basic', () => {
+        let generator = () => 5;
 
-    generator = decorate(generator, (func) => func() * 2);
-    generator = decorate(generator, (func) => func() + 1);
+        generator = decorate(generator, (func) => func() * 2);
+        generator = decorate(generator, (func) => func() + 1);
 
-    const result = generator();
+        const result = generator();
 
-    expect(result).toEqual(11);
+        expect(result).toEqual(11);
+    });
 });
