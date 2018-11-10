@@ -36,7 +36,7 @@
     "compile": "tsc --build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.mjs ./src/",
     "test": "jest",
-    "coverage": "jest --coverage && cat ./tmp/coverage/lcov.info | coveralls"
+    "coverage": "jest --coverage && codecov"
   },
   "directories": {
     "lib": "./lib"
@@ -52,7 +52,7 @@
   "devDependencies": {
     "@types/jest": "^23.3.9",
     "@types/node": "^10.12.2",
-    "coveralls": "^3.0.2",
+    "codecov": "^3.1.0",
     "eslint": "^5.8.0",
     "eslint-config-eser": "^2.0.7",
     "eslint-plugin-import": "^2.14.0",

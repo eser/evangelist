@@ -248,7 +248,7 @@ It is publicly open for any contribution. Bugfixes, new features and extra modul
 [download-image]: https://img.shields.io/npm/dt/evangelist.svg?style=flat-square
 [dep-image]: https://img.shields.io/david/eserozvataf/evangelist.svg?style=flat-square
 [dep-url]: https://github.com/eserozvataf/evangelist
-[coverage-image]: https://coveralls.io/repos/eserozvataf/evangelist/badge.svg?branch=master
-[coverage-url]: https://coveralls.io/r/eserozvataf/evangelist?branch=master
+[coverage-image]: https://codecov.io/gh/eserozvataf/evangelist/branch/master/graph/badge.svg
+[coverage-url]: https://codecov.io/gh/eserozvataf/evangelist
 [license-image]: https://img.shields.io/npm/l/evangelist.svg?style=flat-square
 [license-url]: https://github.com/eserozvataf/evangelist/blob/master/LICENSE
