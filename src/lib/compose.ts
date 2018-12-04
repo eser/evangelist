@@ -1,8 +1,10 @@
-function compose(...funcs: Array<(...args: Array<any>) => any>): any {
+type ComposableFunction = (...args: Array<any>) => any;
+
+function compose(...funcs: Array<ComposableFunction>): ComposableFunction {
     return funcs.reduce(
-        (previousValue, currentValue) => {
-            return function (...args: Array<any>): any {
-                return currentValue(previousValue(...args));
+        (previousFunction: ComposableFunction, currentFunction: ComposableFunction) => {
+            return (...args: Array<any>): any => {
+                return currentFunction(previousFunction(...args));
             }
         },
     );
