@@ -1,0 +1,1 @@
+{"version":3,"file":"curryRight.js","sourceRoot":"","sources":["../src/curryRight.ts"],"names":[],"mappings":";;;AAAA,SAAS,UAAU,CAAC,IAAkC;IAAE,cAAmB;SAAnB,UAAmB,EAAnB,qBAAmB,EAAnB,IAAmB;QAAnB,6BAAmB;;IACvE,OAAO;QAAC,eAAoB;aAApB,UAAoB,EAApB,qBAAoB,EAApB,IAAoB;YAApB,0BAAoB;;QAAK,OAAA,IAAI,gCAAI,KAAK,EAAK,IAAI;IAAtB,CAAuB,CAAC;AAC7D,CAAC;AAGiB,6BAAO;AAHxB,CAAC"}

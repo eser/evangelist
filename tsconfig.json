@@ -12,13 +12,12 @@
         "emitDecoratorMetadata": true,
         "noImplicitAny": false,
         "removeComments": true,
-        "strictNullChecks": true,
         "strict": true,
         "newLine": "LF",
         "rootDir": "./src/",
-        "outDir": "./",
+        "outDir": "./dist/",
         "lib": [
-            "es2015"
+            "es5"
         ],
         "baseUrl": ".",
         "paths": {

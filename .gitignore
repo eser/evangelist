@@ -1,8 +1,16 @@
-# npm
-node_modules/
-
-# OS X
+# OS metadata
 .DS_Store
+Thumbs.db
+
+# Editor metadata
+.vscode/
+*.swp
+
+# package directories
+node_modules/
 
 # temp directory
 tmp/
+
+# configuration and dotfiles
+.env
