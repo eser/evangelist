@@ -15,5 +15,4 @@ function curryRight(func) {
     };
 }
 exports.default = curryRight;
-;
 //# sourceMappingURL=curryRight.js.map

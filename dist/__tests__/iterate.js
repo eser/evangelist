@@ -10,7 +10,7 @@ describe('iterate', function () {
         return tslib_1.__generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    gen1 = function () {
+                    gen1 = function gen() {
                         return tslib_1.__generator(this, function (_a) {
                             switch (_a.label) {
                                 case 0: return [4, 1];
@@ -44,7 +44,7 @@ describe('iterate', function () {
                     delay = function (ms, value) { return new Promise(function (resolve, reject) {
                         setTimeout(function () { return resolve(value); }, ms);
                     }); };
-                    gen1 = function () {
+                    gen1 = function gen() {
                         return tslib_1.__generator(this, function (_a) {
                             switch (_a.label) {
                                 case 0: return [4, 1];
@@ -61,7 +61,7 @@ describe('iterate', function () {
                         });
                     };
                     total = 0;
-                    func1 = function (x) {
+                    func1 = function func(x) {
                         return tslib_1.__awaiter(this, void 0, void 0, function () {
                             var _a;
                             return tslib_1.__generator(this, function (_b) {
@@ -90,7 +90,7 @@ describe('iterate', function () {
         return tslib_1.__generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    gen1 = function () {
+                    gen1 = function gen() {
                         return tslib_1.__generator(this, function (_a) {
                             switch (_a.label) {
                                 case 0: return [4, { value: 1 }];
@@ -114,16 +114,19 @@ describe('iterate', function () {
                             case 1: return [2, (_a.sent()) + 5];
                         }
                     }); }); };
-                    sumWithTotal = function (value) { return tslib_1.__awaiter(_this, void 0, void 0, function () { var _a; return tslib_1.__generator(this, function (_b) {
-                        switch (_b.label) {
-                            case 0:
-                                _a = total;
-                                return [4, value];
-                            case 1:
-                                total = _a + _b.sent();
-                                return [2];
-                        }
-                    }); }); };
+                    sumWithTotal = function (value) { return tslib_1.__awaiter(_this, void 0, void 0, function () {
+                        var _a;
+                        return tslib_1.__generator(this, function (_b) {
+                            switch (_b.label) {
+                                case 0:
+                                    _a = total;
+                                    return [4, value];
+                                case 1:
+                                    total = _a + _b.sent();
+                                    return [2];
+                            }
+                        });
+                    }); };
                     return [4, iterate_1.default(gen1(), compose_1.default(getValue, add5, sumWithTotal))];
                 case 1:
                     result = _a.sent();

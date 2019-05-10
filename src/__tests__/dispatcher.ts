@@ -19,7 +19,7 @@ describe('dispatcher', () => {
         const actionDiv2 = (state, next) => next({ ...state, sum: state.sum / 2 });
 
         const logs: Array<any> = [];
-        const logger = (x) => logs.push(x);
+        const logger = x => logs.push(x);
 
         const result = await dispatcher(initialState, [ actionAdd5, actionDiv2 ], [ logger ]);
 

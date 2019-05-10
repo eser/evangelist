@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = require("tslib");
 function decorate(target, decorator) {
-    return function () {
+    return function func() {
         var args = [];
         for (var _i = 0; _i < arguments.length; _i++) {
             args[_i] = arguments[_i];
@@ -11,5 +11,4 @@ function decorate(target, decorator) {
     };
 }
 exports.default = decorate;
-;
 //# sourceMappingURL=decorate.js.map

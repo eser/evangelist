@@ -3,7 +3,7 @@ import compose from '../compose';
 describe('compose', () => {
     test('basic', () => {
         const lower = x => x.toLowerCase();
-        const chars = x => x.replace(/[^\w \-]+/g, '');
+        const chars = x => x.replace(/[^\w \\-]+/g, '');
         const spaces = x => x.split(' ');
         const dashes = x => x.join('-');
 

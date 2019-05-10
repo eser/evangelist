@@ -7,6 +7,7 @@ export default {
     output: {
         file: './dist/index.min.js',
         format: 'umd',
+        exports: 'named',
         name: 'evangelist',
         compact: true,
         sourcemap: true,

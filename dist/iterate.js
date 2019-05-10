@@ -39,5 +39,4 @@ function iterate(iterable, func) {
     });
 }
 exports.default = iterate;
-;
 //# sourceMappingURL=iterate.js.map

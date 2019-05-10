@@ -10,8 +10,8 @@ describe('emitter', function () {
             switch (_a.label) {
                 case 0:
                     sideEffectCounter = 0;
-                    subscriberOne = function () { return sideEffectCounter += 1; };
-                    subscriberTwo = function () { return sideEffectCounter += 2; };
+                    subscriberOne = function () { sideEffectCounter += 1; };
+                    subscriberTwo = function () { sideEffectCounter += 2; };
                     events = {
                         calculate: [subscriberOne, subscriberTwo],
                     };
@@ -29,8 +29,8 @@ describe('emitter', function () {
             switch (_a.label) {
                 case 0:
                     sideEffectCounter = 0;
-                    subscriberOne = function (value) { return sideEffectCounter += value; };
-                    subscriberTwo = function (value) { return sideEffectCounter += value * 2; };
+                    subscriberOne = function (value) { sideEffectCounter += value; };
+                    subscriberTwo = function (value) { sideEffectCounter += value * 2; };
                     events = {
                         calculate: [subscriberOne, subscriberTwo],
                     };
@@ -48,8 +48,8 @@ describe('emitter', function () {
             switch (_a.label) {
                 case 0:
                     sideEffectCounter = 0;
-                    subscriberOne = function () { return sideEffectCounter += 1; };
-                    subscriberTwo = function () { return sideEffectCounter -= 2; };
+                    subscriberOne = function () { sideEffectCounter += 1; };
+                    subscriberTwo = function () { sideEffectCounter -= 2; };
                     events = {
                         inc: [subscriberOne],
                         dec: [subscriberTwo],
@@ -68,8 +68,8 @@ describe('emitter', function () {
             switch (_a.label) {
                 case 0:
                     sideEffectCounter = 0;
-                    subscriberOne = function (value) { return sideEffectCounter += value; };
-                    subscriberTwo = function (value) { return sideEffectCounter += value * 2; };
+                    subscriberOne = function (value) { sideEffectCounter += value; };
+                    subscriberTwo = function (value) { sideEffectCounter += value * 2; };
                     events = {
                         calculate: [subscriberOne, subscriberTwo],
                     };

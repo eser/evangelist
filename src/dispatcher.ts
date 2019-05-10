@@ -14,26 +14,24 @@ async function dispatcher(state: any, mutators: Array<MutatorType>, subscribers?
 
         index += 1;
 
-        return await layer(
+        return layer(
             newState,
             async (currentState) => {
                 if (hasSubscribers) {
                     // @ts-ignore
-                    (<any>subscribers).forEach(subscriber => {
+                    (<any>subscribers).forEach((subscriber) => {
                         subscriber({ action: layer.name, previousState: newState, newState: currentState });
                     });
                 }
 
-                return await next(currentState);
-            }
+                return next(currentState);
+            },
         );
     };
 
-    return await next(state);
+    return next(state);
 }
 
 export {
-    MutatorType,
-    SubscriberType,
     dispatcher as default,
 };
