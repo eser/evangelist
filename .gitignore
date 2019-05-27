@@ -14,3 +14,6 @@ tmp/
 
 # configuration and dotfiles
 .env
+.env.local
+.env.development.local
+.env.production.local
