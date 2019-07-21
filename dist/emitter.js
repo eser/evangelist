@@ -3,14 +3,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = require("tslib");
 function emitter(events, eventName, args, subscribers) {
     return tslib_1.__awaiter(this, void 0, void 0, function () {
-        var e_1, _a, isEventWildcard, argsPass, _loop_1, _b, _c, eventKey, e_1_1;
+        var isEventWildcard, argsPass, _loop_1, _a, _b, eventKey, e_1_1;
+        var e_1, _c;
         return tslib_1.__generator(this, function (_d) {
             switch (_d.label) {
                 case 0:
                     isEventWildcard = (eventName === '*');
                     argsPass = (args !== undefined) ? args : [];
                     _loop_1 = function (eventKey) {
-                        var e_2, _a, _loop_2, _b, _c, eventSubscriber, e_2_1;
+                        var _loop_2, _a, _b, eventSubscriber, e_2_1;
+                        var e_2, _c;
                         return tslib_1.__generator(this, function (_d) {
                             switch (_d.label) {
                                 case 0:
@@ -36,17 +38,17 @@ function emitter(events, eventName, args, subscribers) {
                                     _d.label = 1;
                                 case 1:
                                     _d.trys.push([1, 6, 7, 8]);
-                                    _b = tslib_1.__values(events[eventKey]), _c = _b.next();
+                                    _a = (e_2 = void 0, tslib_1.__values(events[eventKey])), _b = _a.next();
                                     _d.label = 2;
                                 case 2:
-                                    if (!!_c.done) return [3, 5];
-                                    eventSubscriber = _c.value;
+                                    if (!!_b.done) return [3, 5];
+                                    eventSubscriber = _b.value;
                                     return [5, _loop_2(eventSubscriber)];
                                 case 3:
                                     _d.sent();
                                     _d.label = 4;
                                 case 4:
-                                    _c = _b.next();
+                                    _b = _a.next();
                                     return [3, 2];
                                 case 5: return [3, 8];
                                 case 6:
@@ -55,7 +57,7 @@ function emitter(events, eventName, args, subscribers) {
                                     return [3, 8];
                                 case 7:
                                     try {
-                                        if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+                                        if (_b && !_b.done && (_c = _a.return)) _c.call(_a);
                                     }
                                     finally { if (e_2) throw e_2.error; }
                                     return [7];
@@ -66,17 +68,17 @@ function emitter(events, eventName, args, subscribers) {
                     _d.label = 1;
                 case 1:
                     _d.trys.push([1, 6, 7, 8]);
-                    _b = tslib_1.__values(Object.keys(events)), _c = _b.next();
+                    _a = tslib_1.__values(Object.keys(events)), _b = _a.next();
                     _d.label = 2;
                 case 2:
-                    if (!!_c.done) return [3, 5];
-                    eventKey = _c.value;
+                    if (!!_b.done) return [3, 5];
+                    eventKey = _b.value;
                     return [5, _loop_1(eventKey)];
                 case 3:
                     _d.sent();
                     _d.label = 4;
                 case 4:
-                    _c = _b.next();
+                    _b = _a.next();
                     return [3, 2];
                 case 5: return [3, 8];
                 case 6:
@@ -85,7 +87,7 @@ function emitter(events, eventName, args, subscribers) {
                     return [3, 8];
                 case 7:
                     try {
-                        if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+                        if (_b && !_b.done && (_c = _a.return)) _c.call(_a);
                     }
                     finally { if (e_1) throw e_1.error; }
                     return [7];
