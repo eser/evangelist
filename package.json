@@ -16,7 +16,7 @@
     "emitter",
     "iterate"
   ],
-  "version": "0.12.1",
+  "version": "0.12.2",
   "homepage": "https://github.com/eserozvataf/evangelist#readme",
   "author": "Eser Ozvataf <eser@ozvataf.com>",
   "contributors": [
@@ -37,7 +37,7 @@
   "main": "./index.js",
   "types": "./index.d.ts",
   "engines": {
-    "node": ">=8.10.0"
+    "node": ">=10.13.0"
   },
   "scripts": {
     "cleanup": "rm -rf package-lock.json node_modules/ dist/",
@@ -47,12 +47,10 @@
     "test": "jest",
     "coverage": "jest --coverage && codecov"
   },
-  "dependencies": {
-    "tslib": "^1.10.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/jest": "^24.0.15",
-    "@types/node": "^12.6.8",
+    "@types/jest": "^24.0.16",
+    "@types/node": "^12.6.9",
     "@typescript-eslint/parser": "^1.13.0",
     "codecov": "^3.5.0",
     "eslint": "^6.1.0",
@@ -60,7 +58,7 @@
     "eslint-import-resolver-typescript": "^1.1.1",
     "eslint-plugin-import": "^2.18.2",
     "jest": "^24.8.0",
-    "rollup": "^1.17.0",
+    "rollup": "^1.18.0",
     "rollup-plugin-commonjs": "^10.0.1",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-typescript": "^1.0.1",

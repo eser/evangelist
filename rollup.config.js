@@ -12,7 +12,7 @@ export default {
         compact: true,
         sourcemap: true,
     },
-    external: [ 'tslib' ],
+    external: [],
     plugins: [
         typescript({
             tsconfig: './',
