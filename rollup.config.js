@@ -4,15 +4,19 @@ import commonjs from 'rollup-plugin-commonjs';
 
 export default {
     input: './src/index.ts',
-    output: {
-        file: './dist/index.min.js',
-        format: 'umd',
-        exports: 'named',
-        name: 'evangelist',
-        compact: true,
-        sourcemap: true,
-    },
-    external: [],
+    output: [
+        {
+            file: './dist/index.min.js',
+            format: 'umd',
+            exports: 'named',
+            name: 'evangelist',
+            compact: true,
+            sourcemap: true,
+        },
+    ],
+    external: [
+        'tslib',
+    ],
     plugins: [
         typescript({
             tsconfig: './',

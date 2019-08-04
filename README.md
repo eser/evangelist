@@ -17,7 +17,7 @@ Plus, as a library, Evangelist is completely tree-shaking-friendly. Your favorit
 
 ## Quick start
 
-Execute `npm install evangelist` to install evangelist and its dependencies into your project directory.
+Execute `npm install evangelist` or `yarn add evangelist` to install evangelist and its dependencies into your project directory.
 
 
 ## Usage of modules

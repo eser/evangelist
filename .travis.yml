@@ -5,16 +5,14 @@ node_js:
 - '10'
 - '12'
 
+# keep the npm cache around to speed up installs
 cache:
+  yarn: true
   directories:
   - node_modules
-  - "$HOME/.npm"
-
-before_install:
-- npm update
 
 install:
-- npm ci
+- yarn install --frozen-lockfile --audit --non-interactive
 
 script:
-- npm run coverage
+- yarn run coverage

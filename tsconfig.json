@@ -4,7 +4,7 @@
         "module": "commonjs",
         "moduleResolution": "node",
         "esModuleInterop": true,
-        "importHelpers": false,
+        "importHelpers": true,
         "sourceMap": true,
         "declaration": true,
         "downlevelIteration": true,

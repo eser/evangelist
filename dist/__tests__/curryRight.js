@@ -1,9 +1,7 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-var curryRight_1 = __importDefault(require("../curryRight"));
+var tslib_1 = require("tslib");
+var curryRight_1 = tslib_1.__importDefault(require("../curryRight"));
 describe('curryRight', function () {
     test('basic', function () {
         var dec = function (a, b) { return a - b; };
