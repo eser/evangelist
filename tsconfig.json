@@ -15,7 +15,7 @@
         "strict": true,
         "newLine": "LF",
         "rootDir": "./src/",
-        "outDir": "./dist/",
+        "outDir": "./dist/npm/",
         "lib": [
             "es5"
         ],

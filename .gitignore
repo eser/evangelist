@@ -17,3 +17,7 @@ tmp/
 .env.local
 .env.development.local
 .env.production.local
+
+# rollup plugins
+.rpt2_cache/
+.size-snapshot.json

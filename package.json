@@ -16,7 +16,7 @@
     "emitter",
     "iterate"
   ],
-  "version": "0.12.3",
+  "version": "0.13.5",
   "homepage": "https://github.com/eserozvataf/evangelist#readme",
   "author": "Eser Ozvataf <eser@ozvataf.com>",
   "contributors": [
@@ -41,29 +41,33 @@
   },
   "scripts": {
     "cleanup": "rm -rf yarn.lock node_modules/ dist/",
-    "compile": "tsc --build && rollup -c && cp package.json LICENSE *.md ./dist/",
-    "publish-dist": "yarn publish ./dist/",
+    "compile:npm": "tsc --build && cp package.json LICENSE *.md ./dist/npm/",
+    "compile:bundles": "rollup -c && cp LICENSE *.md ./dist/",
+    "compile": "yarn run compile:npm && yarn run compile:bundles",
+    "publish:npm": "yarn publish ./dist/npm/",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.mjs ./src/",
     "test": "jest",
     "coverage": "jest --coverage && codecov"
   },
-  "dependencies": {},
+  "dependencies": {
+    "tslib": "^1.10.0"
+  },
   "devDependencies": {
-    "@types/jest": "^24.0.16",
-    "@types/node": "^12.6.9",
-    "@typescript-eslint/parser": "^1.13.0",
+    "@types/jest": "^24.0.17",
+    "@types/node": "^12.7.1",
+    "@typescript-eslint/parser": "^2.0.0",
     "codecov": "^3.5.0",
     "eslint": "^6.1.0",
     "eslint-config-eser": "^2.1.2",
     "eslint-import-resolver-typescript": "^1.1.1",
     "eslint-plugin-import": "^2.18.2",
     "jest": "^24.8.0",
-    "rollup": "^1.18.0",
-    "rollup-plugin-commonjs": "^10.0.2",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-typescript": "^1.0.1",
+    "rollup": "^1.19.4",
+    "rollup-plugin-dts": "^1.1.6",
+    "rollup-plugin-size-snapshot": "^0.10.0",
+    "rollup-plugin-terser": "^5.1.1",
+    "rollup-plugin-typescript2": "^0.22.1",
     "ts-jest": "^24.0.2",
-    "tslib": "^1.10.0",
     "typescript": "^3.5.3"
   }
 }
