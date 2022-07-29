@@ -8,6 +8,12 @@
 [![license][license-image]][license-url]
 
 
+## Update (July 2022)
+
+DEPRECATED in favor of [hex](https://github.com/eserozvataf/hex).
+See https://github.com/eserozvataf/hex for details.
+
+
 ## What is the Evangelist?
 
 Evangelist is a set of helper methods that are useful and reusable for base functional programming requirements such as function composition, function decoration, event dispatching and emitting, etc.
